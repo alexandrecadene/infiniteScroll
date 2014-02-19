@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.col {
+			width: 50%;
+			height: 90px;
+			background: beige;
+			float: left;
+			margin-bottom: 10px;
+		}
+		.col:nth-child(2n) {
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<p><a href="#" class="more">Voir plus de vidéos</a></p>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="jquery.infiniteScroll.min.js"></script>
+	<script>
+		$('.content').infiniteScroll({ "videos" : 2, "show" : 4 });
+	</script>
+</body>
+</html>
